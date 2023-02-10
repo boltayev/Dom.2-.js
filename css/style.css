@@ -4,7 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     background: rgb(223, 223, 110) ;
-    margin: 20px 20px;
+    margin: 100px 20px;
 }
 
 .wrapper{
@@ -21,6 +21,7 @@ body{
 
 .input_type{
     width: 300px;
+    height: 25px;
     background: rgb(82, 69, 69);
     color: #fff;
     border-radius: 5px;
@@ -28,11 +29,15 @@ body{
 
 .click_me{
     width: 100px;
+    height: 30px;
     background: rgb(160, 223, 160);
     cursor: pointer;
     margin-top: 10px;
     border-radius: 5px;
-
+}
+.click_me:hover{
+    background: yellowgreen;
+    transform: scale(1.1);
 }
 
 .into{
@@ -67,4 +72,13 @@ body{
     color: red;
     background: yellowgreen ;
     border-radius: 5px;
+}
+.one:hover{
+    background: rgb(143, 126, 126);
+    transform: scale(1.2);
+}
+
+.block{
+    display: flex;
+    gap: 15px;
 }

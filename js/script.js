@@ -28,11 +28,6 @@ function sayHello() {
 }
 
 
-			// <button class="enc">enc</button>
-            // <button class="dec">dec</button>
-            // <button class="rst">rst</button>
-            // <button class="rnd">rnd</button>
-
 const sum = document.querySelector('.sum')
 
 const enc = document.querySelector('.enc')
@@ -55,6 +50,8 @@ function e (){
 
 }
 
+
+
 dec.addEventListener('click', p)
 
 function p (){
@@ -65,21 +62,22 @@ function p (){
 	}
 }
 
+
+
 rst.addEventListener('click' , r)
 
 function r (){
-
+	sumValue = 0
 	sum.innerText  = sumValue
-	if(sumValue > 0 || sumValue < 0 ){
-		sum.innerText = 0
-	}
 }
+
+
 
 rnd.addEventListener('click', m)
 
 function m (){
 	sumValue = Math.random()
-	sumValue = Math.ceil(sumValue * 50)
+	sumValue = Math.floor(Math.random() * (50 - (-50) + 1) ) + (-50); 
 	sum.innerText = `${sumValue}`
 }
 
