@@ -40,7 +40,7 @@ body{
     transform: scale(1.1);
 }
 
-.into{
+ul{
     background: rgb(96, 230, 96);
     width: 500px;
     padding: 20px 20px;
@@ -81,4 +81,14 @@ body{
 .block{
     display: flex;
     gap: 15px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ee:hover{
+    background: red;
+    cursor: pointer;
 }
